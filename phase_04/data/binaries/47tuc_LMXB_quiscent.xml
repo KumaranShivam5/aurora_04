@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<!DOCTYPE VOTABLE SYSTEM "http://us-vo.org/xml/VOTable.dtd">
+<VOTABLE version="1.0">
+  <DEFINITIONS>
+    <COOSYS system="eq_FK5" equinox="2000" />
+  </DEFINITIONS>
+    
+  <RESOURCE ID="T9001">
+     <DESCRIPTION>
+       HEASARC Browse data service
+       Please send inquiries to mailto:request@athena.gsfc.nasa.gov
+    </DESCRIPTION>
+    <PARAM ID="default_search_radius" ucd="OBS_ANG-SIZE" value="0.05" ></PARAM>
+    <TABLE>
+      <DESCRIPTION> Cross Correlation of Master X-Ray Catalog with 47 Tuc Globular Cluster Chandra X-Ray Point Source Catalog (2017 Version) </DESCRIPTION>
+      
+      <FIELD name="w3_a___row" datatype="int"  >
+        <DESCRIPTION>  </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="w3_b___row" datatype="int"  >
+        <DESCRIPTION>  </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="a_name" datatype="char" arraysize="*"  ucd="meta.id;meta.main">
+        <DESCRIPTION> Common Source Designation </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="a_ra" datatype="double" unit="degree" ucd="pos.eq.ra;meta.main">
+        <DESCRIPTION> Right Ascension </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="a_dec" datatype="double" unit="degree" ucd="pos.eq.dec;meta.main">
+        <DESCRIPTION> Declination </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="a_count_rate" datatype="double" unit="ct/s" ucd="phot.count;em.X-ray">
+        <DESCRIPTION> Count Rate (counts/sec) </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="a_count_rate_error" datatype="double" unit="ct/s" ucd="stat.error;phot.count;em.X-ray">
+        <DESCRIPTION> Error in Count Rate </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="a_flux" datatype="double" unit="erg/cm^2/s" ucd="phot.flux;em.X-ray">
+        <DESCRIPTION> Flux (erg/cm^2/s) </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="a_database_table" datatype="char" arraysize="*"  ucd="meta.dataset;meta.table">
+        <DESCRIPTION> Database Table This Entry Comes From </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="a_observatory" datatype="char" arraysize="*"  ucd="meta.id;instr.obsty">
+        <DESCRIPTION> Observatory or Mission Name That Originated the Database Table </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="b_name" datatype="char" arraysize="*"  ucd="meta.id;meta.main">
+        <DESCRIPTION> Source Designation (CXOGlb JHHMMSS.s+DDMMSS) </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="b_alt_name" datatype="char" arraysize="*"  ucd="meta.id">
+        <DESCRIPTION> Alternative Catalog-Based Source Designation </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="b_ra" datatype="double" unit="degree" ucd="pos.eq.ra;meta.main">
+        <DESCRIPTION> Right Ascension </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="b_dec" datatype="double" unit="degree" ucd="pos.eq.dec;meta.main">
+        <DESCRIPTION> Declination </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="b_counts" datatype="double" unit="ct" ucd="phot;em.X-ray">
+        <DESCRIPTION> 0.5-6keV Net Counts </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="b_counts_pos_err" datatype="double" unit="ct" ucd="stat.error;phot;em.X-ray">
+        <DESCRIPTION> Upper Error in 0.5-6keV Net Counts </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="b_counts_neg_err" datatype="double" unit="ct" ucd="stat.error;phot;em.X-ray">
+        <DESCRIPTION> Lower Error in 0.5-6keV Net Counts </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="b_lx" datatype="double" unit="erg/s" ucd="phys.luminosity;em.X-ray">
+        <DESCRIPTION> 0.5-6keV Luminosity </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="b_lx_pos_err" datatype="double" unit="erg/s" ucd="stat.error;phys.luminosity;em.X-ray">
+        <DESCRIPTION> Upper Error in 0.5-6keV Luminosity </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="b_lx_neg_err" datatype="double" unit="erg/s" ucd="stat.error;phys.luminosity;em.X-ray">
+        <DESCRIPTION> Lower Error in 0.5-6keV Luminosity </DESCRIPTION>
+      </FIELD>
+      
+      <FIELD name="_xoffset" datatype="double" unit="'" >
+        <DESCRIPTION>  </DESCRIPTION>
+      </FIELD>
+      <DATA>
+        <TABLEDATA>
+<TR><TD>53721</TD><TD>171</TD><TD>NGC 104-X5</TD><TD>6.003750</TD><TD>-72.081389</TD><TD></TD><TD></TD><TD></TD><TD>RITTERLMXB</TD><TD></TD><TD>CXOGlb J002401.0-720453</TD><TD>[GHE2001] W58</TD><TD>6.003983</TD><TD>-72.081427</TD><TD>25271.7</TD><TD>255.5</TD><TD>267.3</TD><TD>5.7420e+32</TD><TD>5.80e+30</TD><TD>6.10e+30</TD><TD>0.005</TD></TR>
+<TR><TD>53768</TD><TD>176</TD><TD>CXOGlb J002403.4-720451</TD><TD>6.014538</TD><TD>-72.081089</TD><TD>7.357e-02</TD><TD>1.022e-03</TD><TD>4.740e-13</TD><TD>GC47TUCCXO</TD><TD>CHANDRA</TD><TD>CXOGlb J002403.5-720452</TD><TD>[GHE2001] W46</TD><TD>6.014583</TD><TD>-72.081080</TD><TD>45417.4</TD><TD>294.3</TD><TD>352.1</TD><TD>1.0279e+33</TD><TD>6.70e+30</TD><TD>8.00e+30</TD><TD>0.001</TD></TR>
+<TR><TD>53706</TD><TD>171</TD><TD>CXOGlb J002400.9-720453</TD><TD>6.003946</TD><TD>-72.081444</TD><TD>3.960e-02</TD><TD>3.787e-04</TD><TD>2.061e-13</TD><TD>GC47TUCCXO</TD><TD>CHANDRA</TD><TD>CXOGlb J002401.0-720453</TD><TD>[GHE2001] W58</TD><TD>6.003983</TD><TD>-72.081427</TD><TD>25271.7</TD><TD>255.5</TD><TD>267.3</TD><TD>5.7420e+32</TD><TD>5.80e+30</TD><TD>6.10e+30</TD><TD>0.001</TD></TR>
+<TR><TD>53763</TD><TD>176</TD><TD>NGC 104-X7</TD><TD>6.014583</TD><TD>-72.081111</TD><TD></TD><TD></TD><TD></TD><TD>RITTERLMXB</TD><TD></TD><TD>CXOGlb J002403.5-720452</TD><TD>[GHE2001] W46</TD><TD>6.014583</TD><TD>-72.081080</TD><TD>45417.4</TD><TD>294.3</TD><TD>352.1</TD><TD>1.0279e+33</TD><TD>6.70e+30</TD><TD>8.00e+30</TD><TD>0.002</TD></TR>
+<TR><TD>53711</TD><TD>171</TD><TD>CXOGlb J002400.9-720453</TD><TD>6.003917</TD><TD>-72.081439</TD><TD>6.132e-02</TD><TD>9.348e-04</TD><TD>3.945e-13</TD><TD>GC47TUCCXO</TD><TD>CHANDRA</TD><TD>CXOGlb J002401.0-720453</TD><TD>[GHE2001] W58</TD><TD>6.003983</TD><TD>-72.081427</TD><TD>25271.7</TD><TD>255.5</TD><TD>267.3</TD><TD>5.7420e+32</TD><TD>5.80e+30</TD><TD>6.10e+30</TD><TD>0.001</TD></TR>
+<TR><TD>53812</TD><TD>181</TD><TD>CXOGlb J002404.9-720451</TD><TD>6.020679</TD><TD>-72.080925</TD><TD>4.110e-03</TD><TD>1.242e-04</TD><TD>2.377e-14</TD><TD>GC47TUCCXO</TD><TD>CHANDRA</TD><TD>CXOGlb J002405.0-720451</TD><TD>[GHE2001] W37</TD><TD>6.020692</TD><TD>-72.080909</TD><TD> 1360.9</TD><TD> 59.1</TD><TD> 67.2</TD><TD>3.1900e+31</TD><TD>1.40e+30</TD><TD>1.60e+30</TD><TD>0.001</TD></TR>
+<TR><TD>53834</TD><TD>181</TD><TD>NGC 104-W37</TD><TD>6.020833</TD><TD>-72.080833</TD><TD></TD><TD></TD><TD></TD><TD>RITTERLMXB</TD><TD></TD><TD>CXOGlb J002405.0-720451</TD><TD>[GHE2001] W37</TD><TD>6.020692</TD><TD>-72.080909</TD><TD> 1360.9</TD><TD> 59.1</TD><TD> 67.2</TD><TD>3.1900e+31</TD><TD>1.40e+30</TD><TD>1.60e+30</TD><TD>0.005</TD></TR>
+<TR><TD>53834</TD><TD>182</TD><TD>NGC 104-W37</TD><TD>6.020833</TD><TD>-72.080833</TD><TD></TD><TD></TD><TD></TD><TD>RITTERLMXB</TD><TD></TD><TD>CXOGlb J002405.2-720451</TD><TD>[GHE2001] W368</TD><TD>6.021687</TD><TD>-72.080896</TD><TD>   29.6</TD><TD>  8.3</TD><TD> 14.8</TD><TD>1.0000e+30</TD><TD>3.00e+29</TD><TD>5.00e+29</TD><TD>0.016</TD></TR>
+<TR><TD>53815</TD><TD>181</TD><TD>CXOGlb J002404.9-720451</TD><TD>6.020738</TD><TD>-72.080917</TD><TD>5.516e-04</TD><TD>1.019e-04</TD><TD>3.932e-15</TD><TD>GC47TUCCXO</TD><TD>CHANDRA</TD><TD>CXOGlb J002405.0-720451</TD><TD>[GHE2001] W37</TD><TD>6.020692</TD><TD>-72.080909</TD><TD> 1360.9</TD><TD> 59.1</TD><TD> 67.2</TD><TD>3.1900e+31</TD><TD>1.40e+30</TD><TD>1.60e+30</TD><TD>0.001</TD></TR>
+<TR><TD>53766</TD><TD>176</TD><TD>CXOGlb J002403.4-720451</TD><TD>6.014558</TD><TD>-72.081094</TD><TD>1.117e-01</TD><TD>6.338e-04</TD><TD>6.236e-13</TD><TD>GC47TUCCXO</TD><TD>CHANDRA</TD><TD>CXOGlb J002403.5-720452</TD><TD>[GHE2001] W46</TD><TD>6.014583</TD><TD>-72.081080</TD><TD>45417.4</TD><TD>294.3</TD><TD>352.1</TD><TD>1.0279e+33</TD><TD>6.70e+30</TD><TD>8.00e+30</TD><TD>0.001</TD></TR>
+<TR><TD>55131</TD><TD>332</TD><TD>CXOGlb J002353.9-720350</TD><TD>5.974829</TD><TD>-72.063922</TD><TD>7.570e-04</TD><TD>1.207e-04</TD><TD>1.123e-14</TD><TD>GC47TUCCXO</TD><TD>CHANDRA</TD><TD>CXOGlb J002354.0-720350</TD><TD>[GHE2001] W125</TD><TD>5.974938</TD><TD>-72.063908</TD><TD> 1038.9</TD><TD> 55.9</TD><TD> 60.2</TD><TD>4.3100e+31</TD><TD>2.30e+30</TD><TD>2.50e+30</TD><TD>0.002</TD></TR>
+<TR><TD>55132</TD><TD>332</TD><TD>CXOGlb J002353.9-720350</TD><TD>5.974925</TD><TD>-72.063908</TD><TD>3.980e-03</TD><TD>1.224e-04</TD><TD>2.402e-14</TD><TD>GC47TUCCXO</TD><TD>CHANDRA</TD><TD>CXOGlb J002354.0-720350</TD><TD>[GHE2001] W125</TD><TD>5.974938</TD><TD>-72.063908</TD><TD> 1038.9</TD><TD> 55.9</TD><TD> 60.2</TD><TD>4.3100e+31</TD><TD>2.30e+30</TD><TD>2.50e+30</TD><TD>0.000</TD></TR>
+<TR><TD>54473</TD><TD>268</TD><TD>CXOGlb J002408.3-720431</TD><TD>6.034604</TD><TD>-72.075397</TD><TD>2.693e-03</TD><TD>1.014e-04</TD><TD>1.715e-14</TD><TD>GC47TUCCXO</TD><TD>CHANDRA</TD><TD>CXOGlb J002408.3-720431</TD><TD>[GHE2001] W17</TD><TD>6.034608</TD><TD>-72.075387</TD><TD> 1042.5</TD><TD> 57.8</TD><TD> 62.1</TD><TD>2.8800e+31</TD><TD>1.60e+30</TD><TD>1.70e+30</TD><TD>0.001</TD></TR>
+<TR><TD>54477</TD><TD>268</TD><TD>CXOGlb J002408.3-720431</TD><TD>6.034629</TD><TD>-72.075389</TD><TD>1.333e-03</TD><TD>1.505e-04</TD><TD>9.034e-15</TD><TD>GC47TUCCXO</TD><TD>CHANDRA</TD><TD>CXOGlb J002408.3-720431</TD><TD>[GHE2001] W17</TD><TD>6.034608</TD><TD>-72.075387</TD><TD> 1042.5</TD><TD> 57.8</TD><TD> 62.1</TD><TD>2.8800e+31</TD><TD>1.60e+30</TD><TD>1.70e+30</TD><TD>0.000</TD></TR>
+        </TABLEDATA>
+      </DATA>
+    </TABLE>
+  </RESOURCE>
+</VOTABLE>
